@@ -1,79 +1,72 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-main {
-
-
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
 }
 
+/* Center and stack children vertically in the navigation container */
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Center content vertically in the logo and profile sections */
+.logo,
+.profil {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Style the navigation list */
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 100%;
+    background-color: #bdc6eb;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+}
+
+/* Add spacing on the left and right of list items */
+ul li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Style icons within list items */
+ul li i {
+    font-size:2rem;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Set a fixed height for images */
+img {
+    height: 5rem;
+}
+
+/* Add a circular border to profile images */
+.profil img {
+    border-radius: 50%;
+    max-width: 100%;
+    border: 2px solid #000;
+}
+
+/* Add any additional spacing or styling as needed */
+
+
+/* -------main a mettre------- */
 
 .feed-container {
 
@@ -83,7 +76,18 @@ main {
    
 }
 
-.feed-card  {
+.feed-card-new {
+    
+    background-color:white ;
+    
+    border-radius:  2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin-top: 3rem;
+    padding-bottom: 15rem;
+}
+
+.feed-card-1, .feed-card-2, .feed-card-3, .feed-card-4  {
 
    
     background-color:white ;
@@ -92,26 +96,32 @@ main {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     width: 100%;
     margin-top: 3rem;
-    padding-bottom: 15rem;
-   
-   
+    
+    /* --- grid --- */
+   display: grid;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
 
     
 }
 
 
 .photo-profil-1 {
-
-    width: 5%;
+    height: 2.75rem;
+    width: 2.75rem;
     border-radius: 50%;
     margin-left: 1rem;
     margin-top: 1rem;
+    /* --- grid --- */
+    grid-area: 1 / 1 / 3 / 3;
+    z-index: 1;
 }
 
 .feed-card-header2{
-   margin-left: 1em;
-   
-   
+  margin-top: 1rem;
+  margin-left: 4rem;
+   grid-area: 1 / 1 / 4 / 4;
 }
 
 .feed-card-header2 > p {
@@ -120,14 +130,42 @@ main {
 }
 
 .feed-card-header2 > h1 {
-
+ 
     
 }
+.date {
+    font-size: 15px;
+}
 
-.conteneur-buttons {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+
+
+.left-buttons {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+   /* grid-row: 4;
+    grid-column: 1; */
+    grid-area:  6 / 1 / -2 / -5 ;
+}
+
+.right-buttons {
+    margin-top: 0.5rem;
+    margin-left: 2rem;
+    grid-area:  -2 / -3 / -2 ;
+}
+.fdc-content {
+
+}
+
+.like-count {
+    margin-top: 1rem;
+    grid-area: 1 / 6;
+}
+
+#coeur {
+    font-size: 2.5rem;
+}
+
+main {
+    background-color: #bdc6eb;
 }
