@@ -4,6 +4,11 @@
     padding: 0;
 }
 
+p {
+    font-family:'Quicksand', sans-serif ;
+    text-size-adjust: auto ;
+}
+
 /* Center and stack children vertically in the navigation container */
 .nav-mobile {
     display: flex;
@@ -37,6 +42,7 @@ ul {
     background-color: #bdc6eb;
     padding-bottom: 2rem;
     padding-top: 0.5rem;
+    border-bottom: solid 2px #bdc6eb ;
 }
 
 /* Add spacing on the left and right of list items */
@@ -49,6 +55,7 @@ ul li {
 ul li i {
     font-size:2rem;
     text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+
 }
 
 /* Set a fixed height for images */
@@ -68,8 +75,6 @@ img {
 
 /* -------main a mettre------- */
 
-
-
 .feed-container {
 
     display: flex;
@@ -84,7 +89,8 @@ img {
     background-color:white ;
     border-radius:  2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    width: 100%;
+    width: 98%; /* retirer si neg*/
+    margin-left: 0.23rem; /* retire si neg */
     margin-top: 3rem;
     padding-bottom: 2ch;
 }
@@ -96,11 +102,19 @@ img {
 
 .input-new-post{
     margin-top: 2cqb;
-    padding: 7rem;
+    padding: 1rem 5rem;
     border-radius: 8px;
     background-color: #f5f7ff;
     border:none;
+    outline: none;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5) ;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+
+input::placeholder{
+    color: rgb(191, 190, 243);
+    opacity: 70%;
 }
 
 .footer-new-post{
@@ -112,6 +126,11 @@ img {
 .new-post-submit{
     border-radius: 5px;
     padding: 0.6rem;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    border: solid 0.15rem #bdc6eb;
 }
 .feed-card-1  {
     display: flex;
@@ -121,6 +140,8 @@ img {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     width: 100%;
     margin-top: 3rem;
+    width: 98%; /* retirer si neg*/
+    margin-left: 0.23rem; /* retire si neg */
 }
 
 
@@ -175,19 +196,20 @@ margin: 2rem;
     margin-right: 3rem;
 }
 
-.right-buttons{
-
-}
-
-
 .date {
     font-size: 15px;
 }
 
 #coeur {
     font-size: 2.5rem;
+    color: rgb(236, 32, 32);
 }
 
 main {
     background-color: #bdc6eb;
 }
+
+article div i {
+    color: #d3d3d4;
+}
+
