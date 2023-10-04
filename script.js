@@ -1,15 +1,21 @@
 
-const button = document.getElementById('coeur');
-const likecounternum = document.getElementById('counter');
+const buttons = document.querySelectorAll('.fa-heart-circle-check')
 let count = 5;
 
-button.addEventListener('click', () => {
-  // Incrémente le compteur
-  if (count <= 5) {
-     count++
-  } else if (count > 5)
-    count--
+buttons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Incrémente le compteurcon
+    const id = +button.id.split("_").pop()// ["coeur","1"]
+    const likecounternum = document.getElementById(`counter_${id}`);
+   
   
-   likecounternum.textContent = count;
-  
-});
+   
+    if (button.className.includes("blueheart")) {
+     likecounternum.textContent = +likecounternum.innerText +1;
+     button.classList.replace("blueheart","redheart")
+    } else {
+      likecounternum.textContent = +likecounternum.innerText -1;
+     button.classList.replace("redheart","blueheart")
+}
+  });
+  })
