@@ -30,7 +30,8 @@ const postNewCard = () => {
   let newArticle = document.createElement("article");
   newArticle.setAttribute("class", "feed-card-1")
 
-  let date = new Date().toDateString();
+  /*let date = new Date().toDateString();*/
+
   let newCard = `<div class="card-header" >
 
      
@@ -194,3 +195,4 @@ function reload() {
 }
 // Event listeners for reload
 reloadButton.addEventListener("click", reload, false);
+
