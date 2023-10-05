@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital@1&family=Open+Sans:wght@300;400&family=Poppins:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat:ital@1&family=Open+Sans:wght@300;400&family=Poppins:wght@300&family=Quicksand:wght@500&display=swap"
+        rel="stylesheet">
+
     <title>JustReact</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-mobile">
@@ -39,128 +43,150 @@
     </header>
 
 
-<main>
+    <main>
 
-    <article class="feed-card-new"  >
-        <div class="new-post-header">
-            <img src="image/vincent - Copie.jpg" alt="" class="photo-profil-1">
-        </div>
-        <div class="new-post-content">
-            <input id="textCard" type="text" class="input-new-post" placeholder="What's up today ?">
-        </div>     
-        <div class="footer-new-post">
-            <button type="button" onclick="postNewCard()" class="new-post-submit" >Poster</button>
-        </div>
-
-         
-    </article>
-
-<div id="feed-container" class="feed-container" >
-    <article class="feed-card-1" >
-        
-        <div class="card-header" >
-           
-
-            <div class="feed-card-header2" >
-                <img src="image/vincent.jpg" alt="photo de l'utilisateur" class="photo-profil-1">
-                <div class="feed-card-username">
-                    <h1>Vinz D-Y</h1>
-                    <p class="date"> 27 septembre 2023</p>
+        <article class="feed-card-new">
+            <div class="feed-container">
+                <div class="new-post-header">
+                    <img src="image/vincent - Copie.jpg" alt="" class="photo-profil-1">
                 </div>
-            </div>
-             <div class="like-count" >
-              <i class="fa-sharp fa-solid fa-heart-circle-bolt"></i><!-- icon like count -->
-              <p id="counter_1" class="like-count-num" >3</p>
-             </div>
-        </div>
-        <div>
-            <p class="fdc-content" >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem quia perferendis quo eos eius beatae ad incidunt, maiores dicta recusandae enim quaerat eveniet vel officiis dolore fugit aliquid maxime.
-                Quibusdam minus aperiam autem mollitia enim nostrum dolorem quam quia modi temporibus laudantium a ex, nisi ad nesciunt repudiandae. Beatae placeat ipsam magni nobis incidunt error commodi vero corporis quibusdam!
-                Adipisci harum ullam consequatur delectus perspiciatis? Nulla officia ea consectetur porro natus accusamus possimus quod saepe neque praesentium asperiores numquam eligendi iure odio veritatis aliquid, quos dolores! Laborum, beatae perferendis?
-                Iure numquam placeat aspernatur vitae fuga dolore, quisquam nemo non cumque ab ipsam officiis praesentium maiores accusantium odio veniam voluptatem eligendi repudiandae. Minus aperiam corporis magni placeat! Nulla, quia atque?
-                Doloribus quos ad laborum sunt perspiciatis beatae est laudantium dicta numquam soluta minus amet, quibusdam incidunt modi reiciendis deserunt corporis, quod saepe provident sit ex. Ad, beatae ab. Iusto, totam!
-            </p>
-        </div>
-        <div class="footer-card" >
-            <div class="left-buttons" >
-                <i id="coeur_1" class="fa-solid fa-heart-circle-check blueheart" ></i> <!--icon like -->
-            </div>
-            <div class="left-b"> 
-                <i class="fa-solid fa-id-card"></i><!--icon cardfolio -->
-            </div>
-            <div class="right-buttons" >
-                <i class="fa-regular fa-comments"></i> <!--icon like -->
-            </div>
-            <div class="right-b"> 
-                <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio -->
-            </div>
-            
-            
-        </div>
-
-     <!-- reste a voir modale poour faire apparaitre commentaire gens -->     
-    </article>
-    <article class="feed-card-1" >
-        
-        <div class="card-header" >
-           
-
-            <div class="feed-card-header2" >
-                <img src="image/vincent.jpg" alt="photo de l'utilisateur" class="photo-profil-1">
-                <div class="feed-card-username">
-                    <h1>Vinz D-Y</h1>
-                    <p class="date"> 27 septembre 2023</p>
+                <div class="new-post-content">
+                    <input id="textCard" type="text" class="input-new-post" placeholder="What's up today ?">
                 </div>
-            </div>
-             <div class="like-count" >
-              <i class="fa-sharp fa-solid fa-heart-circle-bolt"></i><!-- icon like count -->
-              <p id="counter_2" class="like-count-num" >3</p>
-             </div>
+                <div class="footer-new-post">
+                    <button type="button" onclick="postNewCard()" class="new-post-submit">Poster</button>
+                </div>
+
+
+        </article>
+
+        <div id="feed-container" class="feed-container">
+            <article class="feed-card-1">
+
+                <div class="card-header">
+
+
+                    <div class="feed-card-header2">
+                        <img src="image/vincent.jpg" alt="photo de l'utilisateur" class="photo-profil-1">
+                        <div class="feed-card-username">
+                            <h1>Vinz D-Y</h1>
+                            <p class="date"> 27 septembre 2023</p>
+                        </div>
+                    </div>
+                    <div class="like-count">
+                        <i class="fa-sharp fa-solid fa-heart-circle-bolt"></i><!-- icon like count -->
+                        <p id="counter_1" class="like-count-num">3</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="fdc-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem quia perferendis quo eos
+                        eius beatae ad incidunt, maiores dicta recusandae enim quaerat eveniet vel officiis dolore fugit
+                        aliquid maxime.
+                        Quibusdam minus aperiam autem mollitia enim nostrum dolorem quam quia modi temporibus laudantium
+                        a ex, nisi ad nesciunt repudiandae. Beatae placeat ipsam magni nobis incidunt error commodi vero
+                        corporis quibusdam!
+                        Adipisci harum ullam consequatur delectus perspiciatis? Nulla officia ea consectetur porro natus
+                        accusamus possimus quod saepe neque praesentium asperiores numquam eligendi iure odio veritatis
+                        aliquid, quos dolores! Laborum, beatae perferendis?
+                        Iure numquam placeat aspernatur vitae fuga dolore, quisquam nemo non cumque ab ipsam officiis
+                        praesentium maiores accusantium odio veniam voluptatem eligendi repudiandae. Minus aperiam
+                        corporis magni placeat! Nulla, quia atque?
+                        Doloribus quos ad laborum sunt perspiciatis beatae est laudantium dicta numquam soluta minus
+                        amet, quibusdam incidunt modi reiciendis deserunt corporis, quod saepe provident sit ex. Ad,
+                        beatae ab. Iusto, totam!
+                    </p>
+                </div>
+                <div class="footer-card">
+                    <div class="left-buttons">
+                        <i id="coeur_1" class="fa-solid fa-heart-circle-check blueheart"></i> <!--icon like -->
+                    </div>
+                    <div class="left-b">
+                        <i class="fa-solid fa-id-card"></i><!--icon cardfolio -->
+                    </div>
+                    <div class="right-buttons">
+                        <i class="fa-regular fa-comments"></i> <!--icon like -->
+                    </div>
+                    <div class="right-b">
+                        <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio -->
+                    </div>
+
+
+                </div>
+
+                <!-- reste a voir modale poour faire apparaitre commentaire gens -->
+            </article>
+            <article class="feed-card-1">
+
+                <div class="card-header">
+
+
+                    <div class="feed-card-header2">
+                        <img src="image/vincent.jpg" alt="photo de l'utilisateur" class="photo-profil-1">
+                        <div class="feed-card-username">
+                            <h1>Vinz D-Y</h1>
+                            <p class="date"> 27 septembre 2023</p>
+                        </div>
+                    </div>
+                    <div class="like-count">
+                        <i class="fa-sharp fa-solid fa-heart-circle-bolt"></i><!-- icon like count -->
+                        <p id="counter_2" class="like-count-num">3</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="fdc-content">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem quia perferendis quo eos
+                        eius beatae ad incidunt, maiores dicta recusandae enim quaerat eveniet vel officiis dolore fugit
+                        aliquid maxime.
+                        Quibusdam minus aperiam autem mollitia enim nostrum dolorem quam quia modi temporibus laudantium
+                        a ex, nisi ad nesciunt repudiandae. Beatae placeat ipsam magni nobis incidunt error commodi vero
+                        corporis quibusdam!
+                        Adipisci harum ullam consequatur delectus perspiciatis? Nulla officia ea consectetur porro natus
+                        accusamus possimus quod saepe neque praesentium asperiores numquam eligendi iure odio veritatis
+                        aliquid, quos dolores! Laborum, beatae perferendis?
+                        Iure numquam placeat aspernatur vitae fuga dolore, quisquam nemo non cumque ab ipsam officiis
+                        praesentium maiores accusantium odio veniam voluptatem eligendi repudiandae. Minus aperiam
+                        corporis magni placeat! Nulla, quia atque?
+                        Doloribus quos ad laborum sunt perspiciatis beatae est laudantium dicta numquam soluta minus
+                        amet, quibusdam incidunt modi reiciendis deserunt corporis, quod saepe provident sit ex. Ad,
+                        beatae ab. Iusto, totam!
+                    </p>
+                </div>
+                <div class="footer-card">
+                    <div class="left-buttons">
+                        <i id="coeur_2" class="fa-solid fa-heart-circle-check blueheart"></i> <!--icon like -->
+                    </div>
+                    <div class="left-b">
+                        <i class="fa-solid fa-id-card"></i><!--icon cardfolio -->
+                    </div>
+                    <div class="right-buttons">
+                        <i class="fa-regular fa-comments"></i> <!--icon like -->
+                    </div>
+                    <div class="right-b">
+                        <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio -->
+                    </div>
+
+
+                </div>
+
+                <!-- reste a voir modale poour faire apparaitre commentaire gens -->
+            </article>
+
         </div>
-        <div>
-            <p class="fdc-content" >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolorem quia perferendis quo eos eius beatae ad incidunt, maiores dicta recusandae enim quaerat eveniet vel officiis dolore fugit aliquid maxime.
-                Quibusdam minus aperiam autem mollitia enim nostrum dolorem quam quia modi temporibus laudantium a ex, nisi ad nesciunt repudiandae. Beatae placeat ipsam magni nobis incidunt error commodi vero corporis quibusdam!
-                Adipisci harum ullam consequatur delectus perspiciatis? Nulla officia ea consectetur porro natus accusamus possimus quod saepe neque praesentium asperiores numquam eligendi iure odio veritatis aliquid, quos dolores! Laborum, beatae perferendis?
-                Iure numquam placeat aspernatur vitae fuga dolore, quisquam nemo non cumque ab ipsam officiis praesentium maiores accusantium odio veniam voluptatem eligendi repudiandae. Minus aperiam corporis magni placeat! Nulla, quia atque?
-                Doloribus quos ad laborum sunt perspiciatis beatae est laudantium dicta numquam soluta minus amet, quibusdam incidunt modi reiciendis deserunt corporis, quod saepe provident sit ex. Ad, beatae ab. Iusto, totam!
-            </p>
-        </div>
-        <div class="footer-card" >
-            <div class="left-buttons" >
-                <i id="coeur_2" class="fa-solid fa-heart-circle-check blueheart" ></i> <!--icon like -->
-            </div>
-            <div class="left-b"> 
-                <i class="fa-solid fa-id-card"></i><!--icon cardfolio -->
-            </div>
-            <div class="right-buttons" >
-                <i class="fa-regular fa-comments"></i> <!--icon like -->
-            </div>
-            <div class="right-b"> 
-                <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio -->
-            </div>
-            
-            
-        </div>
 
-     <!-- reste a voir modale poour faire apparaitre commentaire gens -->     
-    </article>
+        <!-- MODAL -->
+        <!-- Créer une box avec un z-index plus élevé que le feed -->
+        <!-- En arrière plan avoir une box qui prend la largeur et la hauteur total de la page avec un background-color noir avec opacité -->
 
-</div>
-
-<!-- MODAL -->
-<!-- Créer une box avec un z-index plus élevé que le feed -->
-<!-- En arrière plan avoir une box qui prend la largeur et la hauteur total de la page avec un background-color noir avec opacité -->
-
-<!-- Affichage du commentaire dans le feed -->
-<!-- Ajouter une box en dessous de la card en partant du même principe que les cards ajoutés dans le feed -->
+        <!-- Affichage du commentaire dans le feed -->
+        <!-- Ajouter une box en dessous de la card en partant du même principe que les cards ajoutés dans le feed -->
 
 
-</main>
+    </main>
 
 
 
 </body>
 <script src="script.js"></script>
+
 </html>
