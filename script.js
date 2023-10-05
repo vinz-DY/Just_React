@@ -1,5 +1,5 @@
 
- buttons = document.querySelectorAll('.fa-heart-circle-check');
+const buttons = document.querySelectorAll('.fa-heart-circle-check');
 let count = 5;
 
 let comments = 2;
@@ -31,7 +31,6 @@ const postNewCard = () => {
   newArticle.setAttribute("class", "feed-card-1")
 
   let date = new Date().toDateString();
-  
   let newCard = `<div class="card-header" >
 
      
