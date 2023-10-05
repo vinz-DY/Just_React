@@ -29,14 +29,16 @@ const postNewCard = () => {
   let newArticle = document.createElement("article");
   newArticle.setAttribute("class", "feed-card-1")
 
+  let date = new Date().toDateString();
   let newCard = `<div class="card-header" >
+
      
 
       <div class="feed-card-header2" >
           <img src="image/vincent.jpg" alt="photo de l'utilisateur" class="photo-profil-1">
           <div class="feed-card-username">
               <h1>Vinz D-Y</h1>
-              <p class="date"> 27 septembre 2023</p>
+              <p class="date">${date}</p>
           </div>
       </div>
        <div class="like-count" >
@@ -114,6 +116,8 @@ inputKey.addEventListener('keydown', function postNewCardInput(event) {
   let newArticle = document.createElement("article");
   newArticle.setAttribute("class", "feed-card-1")
 
+  let date = new Date().toDateString();
+
   let newCard = `<div class="card-header" >
      
 
@@ -121,7 +125,7 @@ inputKey.addEventListener('keydown', function postNewCardInput(event) {
           <img src="image/vincent.jpg" alt="photo de l'utilisateur" class="photo-profil-1">
           <div class="feed-card-username">
               <h1>Vinz D-Y</h1>
-              <p class="date"> 27 septembre 2023</p>
+              <p class="date"> ${date}</p>
           </div>
       </div>
        <div class="like-count" >

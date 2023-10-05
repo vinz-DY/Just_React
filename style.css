@@ -94,6 +94,7 @@ img {
     width: 98%; /* retirer si neg*/
     margin-left: 0.23rem; /* retire si neg */
     margin-top: 3rem;
+    margin-bottom: 1rem;
     padding-bottom: 2ch;
 }
 
@@ -142,7 +143,8 @@ input::placeholder{
     border-radius:  2rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     width: 98%; /* retirer si neg*/
     margin-left: 0.23rem; /* retire si neg */
 }
@@ -223,3 +225,4 @@ article div i {
 .redheart {
     color: red;
 }
+
