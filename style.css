@@ -150,6 +150,7 @@ input::placeholder {
     margin-bottom: 1rem;
     width: 98%; /* retirer si neg*/
     margin-left: 0.23rem; /* retire si neg */
+    word-wrap: break-word;
 }
 
 
