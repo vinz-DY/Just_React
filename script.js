@@ -1,5 +1,5 @@
 
-var buttons = document.querySelectorAll('.fa-heart-circle-check');
+ buttons = document.querySelectorAll('.fa-heart-circle-check');
 let count = 5;
 
 let comments = 2;
@@ -15,7 +15,8 @@ buttons.forEach(button => {
       button.classList.replace("blueheart","redheart")
     } else {
       likecounternum.textContent = +likecounternum.innerText -1;
-      button.classList.replace("redheart","blueheart")
+      button.classList.replace("redheart", "blueheart")
+      
     }
   });
 })
@@ -30,6 +31,7 @@ const postNewCard = () => {
   newArticle.setAttribute("class", "feed-card-1")
 
   let date = new Date().toDateString();
+  
   let newCard = `<div class="card-header" >
 
      
@@ -43,7 +45,7 @@ const postNewCard = () => {
       </div>
        <div class="like-count" >
         <i class="fa-sharp fa-solid fa-heart-circle-bolt"></i><!-- icon like count -->
-        <p id="counter_${comments}" class="like-count-num" >5</p>
+        <p id="counter_${comments}" class="like-count-num" ></p>
        </div>
   </div>
   <div>
@@ -130,7 +132,7 @@ inputKey.addEventListener('keydown', function postNewCardInput(event) {
       </div>
        <div class="like-count" >
         <i class="fa-sharp fa-solid fa-heart-circle-bolt"></i><!-- icon like count -->
-        <p id="counter_${comments}" class="like-count-num" >5</p>
+        <p id="counter_${comments}" class="like-count-num" ></p>
        </div>
   </div>
   <div>
