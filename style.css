@@ -244,13 +244,18 @@ article div i {
     }
 
     main {
-        display: flex;
-        flex-direction: column;
+         display: flex;
+         flex-direction: column;
         justify-content: center;
-        padding: 0 500px;
+        width: 100%;
+        align-items: center;
         margin: 0 auto;
-        flex-wrap: wrap;
         background-color: #bdc6eb;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
     }
 
     article div i {
