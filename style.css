@@ -23,6 +23,7 @@ p {
     width: 100%;
     align-items: center;
     margin-bottom: 0.5rem;
+    background-color: #f5f7ff;
 }
 
 /* Center content vertically in the logo and profile sections */
@@ -207,7 +208,7 @@ margin: 2rem;
     color: rgb(231, 32, 32);
 }
 
-main {
+body {
     background-color: #bdc6eb;
 }
 

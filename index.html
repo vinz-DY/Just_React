@@ -41,27 +41,21 @@
 
 <main>
 
-
-<div class="feed-container" >
-
-
-<article class="feed-card-new"  >
+    <article class="feed-card-new"  >
         <div class="new-post-header">
             <img src="image/vincent - Copie.jpg" alt="" class="photo-profil-1">
         </div>
         <div class="new-post-content">
-            <form class="new-post-form" >
-                <label for=""></label>
-            <input type="text" class="input-new-post" placeholder="What's up today ?">
+            <input id="textCard" type="text" class="input-new-post" placeholder="What's up today ?">
         </div>     
         <div class="footer-new-post">
-            <button type="submit" class="new-post-submit" >Poster</button>
+            <button type="button" onclick="postNewCard()" class="new-post-submit" >Poster</button>
         </div>
-     </div>
-        </form> 
-        </div>
-</article>
 
+         
+    </article>
+
+<div id="feed-container" class="feed-container" >
     <article class="feed-card-1" >
         
         <div class="card-header" >
@@ -76,7 +70,7 @@
             </div>
              <div class="like-count" >
               <i class="fa-sharp fa-solid fa-heart-circle-bolt"></i><!-- icon like count -->
-              <p id="counter_1" class="like-count-num" >5</p>
+              <p id="counter_1" class="like-count-num" >3</p>
              </div>
         </div>
         <div>
@@ -90,22 +84,22 @@
         </div>
         <div class="footer-card" >
             <div class="left-buttons" >
-                <i id="coeur_1" class="fa-solid fa-heart-circle-check blueheart" ></i> <!--icon like-->
+                <i id="coeur_1" class="fa-solid fa-heart-circle-check blueheart" ></i> <!--icon like -->
             </div>
             <div class="left-b"> 
-                <i class="fa-solid fa-id-card"></i><!--icon cardfolio-->
+                <i class="fa-solid fa-id-card"></i><!--icon cardfolio -->
             </div>
             <div class="right-buttons" >
-                <i class="fa-regular fa-comments"></i> <!--icon like-->
+                <i class="fa-regular fa-comments"></i> <!--icon like -->
             </div>
             <div class="right-b"> 
-                <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio-->
+                <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio -->
             </div>
             
             
         </div>
 
-     <!-- reste a voir modale poour faire apparaitre commentaire gens -->        
+     <!-- reste a voir modale poour faire apparaitre commentaire gens -->     
     </article>
     <article class="feed-card-1" >
         
@@ -135,29 +129,32 @@
         </div>
         <div class="footer-card" >
             <div class="left-buttons" >
-                <i id="coeur_2" class="fa-solid fa-heart-circle-check blueheart" ></i> <!--icon like-->
+                <i id="coeur_2" class="fa-solid fa-heart-circle-check blueheart" ></i> <!--icon like -->
             </div>
             <div class="left-b"> 
-                <i class="fa-solid fa-id-card"></i><!--icon cardfolio-->
+                <i class="fa-solid fa-id-card"></i><!--icon cardfolio -->
             </div>
             <div class="right-buttons" >
-                <i class="fa-regular fa-comments"></i> <!--icon like-->
+                <i class="fa-regular fa-comments"></i> <!--icon like -->
             </div>
             <div class="right-b"> 
-                <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio-->
+                <i class="fa-solid fa-square-share-nodes"></i><!--icon cardfolio -->
             </div>
             
             
         </div>
 
-     <!-- reste a voir modale poour faire apparaitre commentaire gens -->        
+     <!-- reste a voir modale poour faire apparaitre commentaire gens -->     
     </article>
 
-
-    
 </div>
 
+<!-- MODAL -->
+<!-- Créer une box avec un z-index plus élevé que le feed -->
+<!-- En arrière plan avoir une box qui prend la largeur et la hauteur total de la page avec un background-color noir avec opacité -->
 
+<!-- Affichage du commentaire dans le feed -->
+<!-- Ajouter une box en dessous de la card en partant du même principe que les cards ajoutés dans le feed -->
 
 
 </main>
