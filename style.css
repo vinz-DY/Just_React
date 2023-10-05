@@ -57,7 +57,7 @@ ul li i {
     font-size: 2rem;
     text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
-
+    transition: all 10 ease
 }
 
 /* Set a fixed height for images */
@@ -232,6 +232,8 @@ article div i {
     color: red;
 }
 
+/*--------------responsiv---------------------*/
+
 @media screen and (min-width: 415px) {
 
     .feed-container,
@@ -268,4 +270,14 @@ article div i {
         gap: 12rem;
         margin-top: 1rem;
     }
+
+    ul li i:hover {
+        color: white;
+        transition: all 10 ease;
+}
+}
+/*------------hover------------*/
+
+.new-post-submit:hover {
+    border: solid 0.15rem #96a1cd;
 }
