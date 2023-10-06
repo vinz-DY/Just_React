@@ -147,8 +147,7 @@ input::placeholder {
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 1rem;
-    width: 98%; /* retirer si neg*/
+    margin-bottom: 1rem;/* retirer si neg*/
     margin-left: 0.23rem; /* retire si neg */
     word-wrap: break-word;
 }
@@ -281,6 +280,12 @@ article div i {
     ul li i:hover {
         color: white;
         transition: all 10 ease;
+
+}
+ul li i p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 }
 /*------------hover------------*/
