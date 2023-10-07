@@ -70,7 +70,7 @@ Notre choix s'est porté sur ce dernier..
 
 ----------------------------------------------------------------------------------------------------------------------  
   ### Nous retrouver
-  * le code --> https://github.com/iNaeRoZ/project-JustReact
-  * le live  --> https://inaeroz.github.io/project-JustReact
+  * le code --> https://github.com/vinz-DY/Just_React
+  * le live  --> https://vinz-dy.github.io/Just_React/
     
  
